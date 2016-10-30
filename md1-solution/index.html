@@ -7,5 +7,14 @@
   <script src="app.js"></script>
 </head>
 <body>
+<div ng-controller="LunchController">
+    <p>Empty string is not consider</p>
+    <div>
+        <span>Status: </span>
+        <span>{{alert}}</span>
+    </div>
+    <input type="text" ng-model="food">
+    <button type="button" ng-click="checkFood()">Check If Too Much</button>
+</div>
 </body>
 </html>
